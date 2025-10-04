@@ -1,4 +1,15 @@
 {
+	"advancedQuery": {
+		"advanced-query": "Advanced query",
+		"clik-search": "Click search to apply the filter"
+	},
+	"audit-history": {
+		"action-at": "Action at",
+		"action-by": "Action by",
+		"audit-history-records": "Audit history records",
+		"created-at": "Created at",
+		"title": "Audit history"
+	},
 	"confirm-dialog": {
 		"description": "Are you sure you want to delete this element?"
 	},
@@ -15,6 +26,7 @@
 	"feedback": "Feedback",
 	"help": "Help",
 	"home": "Home",
+	"include-deleted-records": "Include deleted records",
 	"language": {
 		"danish": "Danish",
 		"english": "English"
@@ -22,9 +34,15 @@
 	"mainLinks": "Main links",
 	"new": "New",
 	"no-data": "No data",
+	"pagination": {
+		"page-n-of-total": "Page {{currentPage}} of {{totalPage}}",
+		"result-per-page": "Result per page",
+		"total-result": "Total result"
+	},
 	"product": {
 		"title": "Products"
 	},
+	"product-description": "Create Read Updated Delete",
 	"products": {
 		"category": "Category",
 		"category-description": "Category",

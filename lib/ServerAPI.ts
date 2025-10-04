@@ -1,6 +1,9 @@
 //-------------------------------------------- API query -----------------------------------------
 
 import Axios, { AxiosResponse } from "axios";
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:3011";
 
 const getAccessTokenSilent = async () => {
   //TODO: implement real auth

@@ -1,4 +1,15 @@
 {
+	"advancedQuery": {
+		"advanced-query": "",
+		"clik-search": ""
+	},
+	"audit-history": {
+		"action-at": "",
+		"action-by": "",
+		"audit-history-records": "Revisionshistorik",
+		"created-at": "",
+		"title": ""
+	},
 	"confirm-dialog": {
 		"description": ""
 	},
@@ -15,6 +26,7 @@
 	"feedback": "",
 	"help": "",
 	"home": "",
+	"include-deleted-records": "",
 	"language": {
 		"danish": "Dansk",
 		"english": "Engelsk"
@@ -22,9 +34,15 @@
 	"mainLinks": "",
 	"new": "",
 	"no-data": "Ingen data",
+	"pagination": {
+		"page-n-of-total": "",
+		"result-per-page": "",
+		"total-result": ""
+	},
 	"product": {
 		"title": ""
 	},
+	"product-description": "",
 	"products": {
 		"category": "",
 		"category-description": "",

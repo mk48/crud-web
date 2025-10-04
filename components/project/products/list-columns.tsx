@@ -24,6 +24,7 @@ export const columns = [
     header: ({ column }) => {
       return <ToggleSortColumnHeader column={column}>{i18next.t("products.department")}</ToggleSortColumnHeader>;
     },
+    size: 10,
     cell: (info) => info.getValue(),
   }),
   //----------------- Column: Category ---------------------------
@@ -52,7 +53,7 @@ export const columns = [
     header: ({ column }) => {
       return <ToggleSortColumnHeader column={column}>{i18next.t("products.description")}</ToggleSortColumnHeader>;
     },
-    cell: (info) => info.getValue(),
+    cell: (info) => info.getValue()?.substring(0, 20) + "...",
   }),
   //----------------- Column: Size ---------------------------
   columnHelper.accessor("size", {
@@ -66,7 +67,7 @@ export const columns = [
     header: ({ column }) => {
       return <ToggleSortColumnHeader column={column}>{i18next.t("products.price")}</ToggleSortColumnHeader>;
     },
-    cell: (info) => info.getValue(),
+    cell: (info) => <span className="text-right"> {info.getValue()}</span>,
   }),
 
   //----------------- Column: Action by ---------------------------
@@ -102,7 +103,7 @@ export const columns = [
         </ToggleSortColumnHeader>
       );
     },
-    size: 150,
+    //size: 150,
     cell: ({ row }) => {
       const audit: AuditColumn = {
         createdAt: row.original.createdAt,

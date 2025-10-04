@@ -27,6 +27,7 @@ import { useTranslation } from "react-i18next";
 import { columns } from "./list-columns";
 import { ProductsDto } from "./types";
 import { PaginationModel } from "../types";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function ProductsList() {
   const { t } = useTranslation();

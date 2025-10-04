@@ -19,7 +19,7 @@ const formSchema = z.object({
   color: z.string(),
   description: z.string(),
   size: z.string(),
-  price: z.number().min(1),
+  price: z.coerce.number<number>(),
 });
 export type ProductsFormSchema = z.infer<typeof formSchema>;
 
