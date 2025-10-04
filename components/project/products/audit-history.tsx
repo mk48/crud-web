@@ -4,7 +4,7 @@ import ErrorMessage from "@/components/ErrorMessage";
 import PageLoadingIcon from "@/components/PageLoadingIcon";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { serverAPIwithAuthGetNoQuery } from "@/lib/ServerAPI";
-import { SortedByAuditTime } from "@/lib/sort";
+import { SortedByAuditColumns, SortedByAuditTime } from "@/lib/sort";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import { ProductsDto } from "./types";
@@ -21,9 +21,7 @@ const ProductsAuditHistory: React.FC<props> = ({ id }) => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["products-audit-history", id],
     queryFn: async () => {
-      const response = await serverAPIwithAuthGetNoQuery<AuditModel<ProductsDto>[]>(
-        `/api/v1/products/${id}/audit-history`
-      );
+      const response = await serverAPIwithAuthGetNoQuery<ProductsDto[]>(`/api/v1/products/${id}/audit-history`);
       return response.data;
     },
   });
@@ -58,16 +56,16 @@ const ProductsAuditHistory: React.FC<props> = ({ id }) => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data?.sort(SortedByAuditTime).map((row, idx) => (
+          {data?.sort(SortedByAuditColumns).map((row, idx) => (
             <TableRow key={`products-history-${idx}`}>
-              <TableCell>{row.record.productName}</TableCell>
-              <TableCell>{row.record.department}</TableCell>
-              <TableCell>{row.record.category}</TableCell>
-              <TableCell>{row.record.material}</TableCell>
-              <TableCell>{row.record.color}</TableCell>
-              <TableCell>{row.record.description}</TableCell>
-              <TableCell>{row.record.size}</TableCell>
-              <TableCell>{row.record.price}</TableCell>
+              <TableCell>{row.productName}</TableCell>
+              <TableCell>{row.department}</TableCell>
+              <TableCell>{row.category}</TableCell>
+              <TableCell>{row.material}</TableCell>
+              <TableCell>{row.color}</TableCell>
+              <TableCell>{row.description}</TableCell>
+              <TableCell>{row.size}</TableCell>
+              <TableCell>{row.price}</TableCell>
               <TableCell>
                 <AuditUserName auditModel={row} />
               </TableCell>
