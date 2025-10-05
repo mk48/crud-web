@@ -43,7 +43,6 @@ const AdvancedQueryBuilder: React.FC<props> = ({ columnMetaDataUrl, isBusy, defa
   const { data, isLoading, isError } = useQuery({
     queryKey: ["column-meta-data", columnMetaDataUrl],
     queryFn: async () => {
-      console.log("column meta data");
       const response = await serverAPIwithAuthGetNoQuery<ListMetaDataResponseModel>(columnMetaDataUrl);
       return response.data;
     },

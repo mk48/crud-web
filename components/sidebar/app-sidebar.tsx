@@ -24,7 +24,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const data = {
     navProduction: [
       {
-        title: t("translation:product.title"),
+        title: t("translation:products.page-title"),
         url: "/products",
         icon: Component,
         isActive: false,

@@ -8,12 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import {
-  ChevronLeft,
-  ChevronRightIcon,
-  ChevronsLeft,
-  ChevronsRight,
-} from "lucide-react";
+import { ChevronLeft, ChevronRightIcon, ChevronsLeft, ChevronsRight } from "lucide-react";
 import { Table } from "@tanstack/react-table";
 import { useTranslation } from "react-i18next";
 
@@ -31,9 +26,7 @@ const Pagination: React.FC<props> = ({ table }) => {
       </div>
       <div className="flex items-center space-x-6 lg:space-x-8">
         <div className="flex items-center space-x-2">
-          <p className="text-sm font-medium">
-            {t("translation:pagination.result-per-page")}
-          </p>
+          <p className="text-sm font-medium">{t("translation:pagination.result-per-page")}</p>
           <Select
             value={table.getState().pagination.pageSize.toString()}
             onValueChange={(value: string) => table.setPageSize(Number(value))}
@@ -42,7 +35,7 @@ const Pagination: React.FC<props> = ({ table }) => {
               <SelectValue placeholder={table.getState().pagination.pageSize} />
             </SelectTrigger>
             <SelectContent side="top">
-              {[2, 10, 20, 30, 40, 50].map(pageSize => (
+              {[10, 20, 30, 40, 50].map((pageSize) => (
                 <SelectItem key={pageSize} value={pageSize.toString()}>
                   {pageSize}
                 </SelectItem>

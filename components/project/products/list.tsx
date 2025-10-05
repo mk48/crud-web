@@ -28,24 +28,39 @@ import { columns } from "./list-columns";
 import { ProductsDto } from "./types";
 import { PaginationModel } from "../types";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { parseAsBoolean, parseAsString, useQueryState } from "nuqs";
+import { parseAsJson } from "nuqs";
+import { z } from "zod";
+import { useSortingQueryState } from "@/hooks/useSortingQueryState";
+
+const paginationSchema = z.object({
+  pageIndex: z.number(),
+  pageSize: z.number(),
+});
 
 export default function ProductsList() {
   const { t } = useTranslation();
-  const [sorting, setSorting] = useState<SortingState>([]);
-  const [pagination, setPagination] = useState({
-    pageIndex: 0, //initial page index
-    pageSize: 10, //default page size
-  });
+  const [sorting, setSorting] = useSortingQueryState();
+  const [pagination, setPagination] = useQueryState(
+    "pagination",
+    parseAsJson(paginationSchema).withDefault({ pageIndex: 0, pageSize: 10 })
+  );
 
   //default search
   const [searchValue, setSearchValue] = useState("");
-  const [debouncedSearchValue, setDebouncedSearchValue] = useState("");
-  const [includeDeletedRecords, setIncludeDeletedFiles] = useState(false);
+  const [debouncedSearchValue, setDebouncedSearchValue] = useQueryState("search", parseAsString.withDefault(""));
+  const [includeDeletedRecords, setIncludeDeletedFiles] = useQueryState(
+    "includeDeleted",
+    parseAsBoolean.withDefault(false)
+  );
 
   //advanced query
-  const [queryType, setQueryType] = useState("search"); //search or advancedQuery
-  const [whereCondition, setwhereCondition] = useState("");
-  const [whereConditionParameters, setwhereConditionParameters] = useState("");
+  const [queryType, setQueryType] = useQueryState("queryType", parseAsString.withDefault("search")); //search or advancedQuery
+  const [whereCondition, setwhereCondition] = useQueryState("where", parseAsString.withDefault(""));
+  const [whereConditionParameters, setwhereConditionParameters] = useQueryState(
+    "whereParam",
+    parseAsString.withDefault("")
+  );
 
   const debounceSearch = useDebounce((str: string) => {
     setDebouncedSearchValue(str);

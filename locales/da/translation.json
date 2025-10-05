@@ -39,9 +39,6 @@
 		"result-per-page": "",
 		"total-result": ""
 	},
-	"product": {
-		"title": ""
-	},
 	"product-description": "",
 	"products": {
 		"category": "",
@@ -72,6 +69,7 @@
 		"productName-filter": "",
 		"productName-placeholder": "",
 		"search-by-productName": "",
+		"select-placeholder": "",
 		"size": "",
 		"size-description": "",
 		"size-placeholder": ""

@@ -39,9 +39,6 @@
 		"result-per-page": "Result per page",
 		"total-result": "Total result"
 	},
-	"product": {
-		"title": "Products"
-	},
 	"product-description": "Create Read Updated Delete",
 	"products": {
 		"category": "Category",
@@ -72,6 +69,7 @@
 		"productName-filter": "Search by Product Name",
 		"productName-placeholder": "Product Name",
 		"search-by-productName": "",
+		"select-placeholder": "Select products",
 		"size": "Size",
 		"size-description": "Size",
 		"size-placeholder": "Size"
