@@ -38,9 +38,9 @@ const ProductsSelect: React.FC<props> = ({ id, name, onSelect }) => {
 
   //------------------------- Query:List slim - site configuration -----------------------------------
   const { data, isLoading, isError } = useQuery({
-    queryKey: ["products-list", debouncedSearchValue],
+    queryKey: ["products-id-name-list", debouncedSearchValue],
     queryFn: async () => {
-      const response = await serverAPIwithAuthGet<PaginationModel<ProductsDto>>("/api/v1/products", {
+      const response = await serverAPIwithAuthGet<PaginationModel<ProductsDto>>("/api/v1/products/id-name", {
         searchText: debouncedSearchValue,
         pageIndex: 0,
         recordsPerPage: 50, //this is dropdown combo box, so by default list only 50 items

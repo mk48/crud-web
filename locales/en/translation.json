@@ -3,6 +3,10 @@
 		"advanced-query": "Advanced query",
 		"clik-search": "Click search to apply the filter"
 	},
+	"another": {
+		"address": "Address",
+		"page-title": "Another"
+	},
 	"audit-history": {
 		"action-at": "Action at",
 		"action-by": "Action by",
@@ -77,6 +81,7 @@
 	"save": "Save",
 	"search": "Search",
 	"subLinks": "Sub links",
+	"submit": "Submit",
 	"success": "Success",
 	"update": "Update",
 	"update-failed": "Update failed",

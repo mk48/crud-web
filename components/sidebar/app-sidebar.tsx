@@ -1,6 +1,6 @@
 "use client";
 
-import { BrushCleaning, Component, LifeBuoy, PlugZap, Send } from "lucide-react";
+import { Bird, BrushCleaning, Component, LifeBuoy, PlugZap, Send } from "lucide-react";
 import * as React from "react";
 
 import { NavSecondary } from "@/components/sidebar/nav-secondary";
@@ -34,6 +34,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             url: "/products/new",
           },
         ],
+      },
+      {
+        title: t("translation:another.page-title"),
+        url: "/another",
+        icon: Bird,
+        isActive: false,
       },
     ],
     navConfigs: [

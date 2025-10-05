@@ -3,6 +3,10 @@
 		"advanced-query": "",
 		"clik-search": ""
 	},
+	"another": {
+		"address": "",
+		"page-title": ""
+	},
 	"audit-history": {
 		"action-at": "",
 		"action-by": "",
@@ -77,6 +81,7 @@
 	"save": "",
 	"search": "",
 	"subLinks": "",
+	"submit": "",
 	"success": "Succes",
 	"update": "Opdatering",
 	"update-failed": "Opdatering fejlede",

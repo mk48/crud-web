@@ -58,6 +58,41 @@
 								</children>
 							</folder_node>
 							<folder_node>
+								<name>another</name>
+								<children>
+									<concept_node>
+										<name>address</name>
+										<description/>
+										<comment/>
+										<translations>
+											<translation>
+												<language>da-DK</language>
+												<approved>false</approved>
+											</translation>
+											<translation>
+												<language>en-US</language>
+												<approved>false</approved>
+											</translation>
+										</translations>
+									</concept_node>
+									<concept_node>
+										<name>page-title</name>
+										<description/>
+										<comment/>
+										<translations>
+											<translation>
+												<language>da-DK</language>
+												<approved>false</approved>
+											</translation>
+											<translation>
+												<language>en-US</language>
+												<approved>false</approved>
+											</translation>
+										</translations>
+									</concept_node>
+								</children>
+							</folder_node>
+							<folder_node>
 								<name>audit-history</name>
 								<children>
 									<concept_node>
@@ -1029,6 +1064,21 @@
 							</concept_node>
 							<concept_node>
 								<name>subLinks</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>da-DK</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>submit</name>
 								<description/>
 								<comment/>
 								<translations>
