@@ -27,7 +27,7 @@ interface props {
   onSearch: (whereCondition: string, whereConditionParameters: string) => void;
 }
 
-const csharpDataTypeToValueEditor: { [key: string]: ValueEditorType } = {
+const apiDataTypeToValueEditor: { [key: string]: ValueEditorType } = {
   Boolean: "checkbox",
 };
 
@@ -43,6 +43,7 @@ const AdvancedQueryBuilder: React.FC<props> = ({ columnMetaDataUrl, isBusy, defa
   const { data, isLoading, isError } = useQuery({
     queryKey: ["column-meta-data", columnMetaDataUrl],
     queryFn: async () => {
+      console.log("column meta data");
       const response = await serverAPIwithAuthGetNoQuery<ListMetaDataResponseModel>(columnMetaDataUrl);
       return response.data;
     },
@@ -50,7 +51,7 @@ const AdvancedQueryBuilder: React.FC<props> = ({ columnMetaDataUrl, isBusy, defa
       const fields: Field[] = data.columns.map((col) => ({
         name: col.name,
         label: col.name,
-        valueEditorType: csharpDataTypeToValueEditor[col.dataType],
+        valueEditorType: apiDataTypeToValueEditor[col.dataType],
       }));
       return fields;
     },
@@ -64,8 +65,8 @@ const AdvancedQueryBuilder: React.FC<props> = ({ columnMetaDataUrl, isBusy, defa
   const onSearchClicked = () => {
     const q = formatQuery(query, {
       format: "parameterized",
-      preset: "postgresql",
-      paramPrefix: "@p",
+      //preset: "postgresql",
+      //paramPrefix: "@p",
     });
 
     const where = q.sql;
