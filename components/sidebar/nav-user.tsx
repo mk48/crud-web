@@ -94,6 +94,10 @@ export function NavUser() {
                 {t("translation:language.english")}
                 <DropdownMenuShortcut>🇺🇸</DropdownMenuShortcut>
               </DropdownMenuRadioItem>
+              <DropdownMenuRadioItem value="ta">
+                {t("translation:language.tamil")}
+                <DropdownMenuShortcut>🇮🇳</DropdownMenuShortcut>
+              </DropdownMenuRadioItem>
             </DropdownMenuRadioGroup>
 
             <DropdownMenuSeparator />

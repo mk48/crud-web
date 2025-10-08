@@ -1,0 +1,91 @@
+{
+	"advancedQuery": {
+		"advanced-query": "மேம்பட்ட வினவல்",
+		"clik-search": "வடிப்பானைப் பயன்படுத்த தேடலைக் கிளிக் செய்யவும்."
+	},
+	"another": {
+		"address": "முகவரி",
+		"page-title": "மற்றொன்று"
+	},
+	"audit-history": {
+		"action-at": "நடவடிக்கை",
+		"action-by": "செயல்",
+		"audit-history-records": "தணிக்கை வரலாற்றுப் பதிவுகள்",
+		"created-at": "உருவாக்கப்பட்டது",
+		"title": "தணிக்கை வரலாறு"
+	},
+	"confirm-dialog": {
+		"description": "இந்த உறுப்பை நீக்க விரும்புகிறீர்களா?"
+	},
+	"create": "உருவாக்கு",
+	"create-failed": "உருவாக்கத் தவறிவிட்டது",
+	"create-success": "வெற்றிகரமாக உருவாக்கப்பட்டது",
+	"delete": "அழி",
+	"deleted": "நீக்கப்பட்டது",
+	"edit": "தொகு",
+	"err-loading-data": "தரவை ஏற்றும்போது பிழை ஏற்பட்டது.",
+	"err-reaching-web-server": "வலை சேவையகத்தை அடைய முடியவில்லை.",
+	"error": "பிழை",
+	"failed": "தோல்வியடைந்தது",
+	"feedback": "பின்னூட்டம்",
+	"help": "உதவி",
+	"home": "வீடு",
+	"include-deleted-records": "நீக்கப்பட்ட பதிவுகளைச் சேர்க்கவும்",
+	"language": {
+		"danish": "டேனிஷ்",
+		"english": "ஆங்கிலம்",
+		"tamil": "தமிழ்"
+	},
+	"mainLinks": "முக்கிய இணைப்புகள்",
+	"new": "புதியது",
+	"no-data": "தரவு இல்லை",
+	"pagination": {
+		"page-n-of-total": "பக்கம் {{currentPage}} / {{totalPage}}",
+		"result-per-page": "பக்கத்திற்கான முடிவு",
+		"total-result": "மொத்த முடிவு"
+	},
+	"product-description": "படிக்கப்பட்ட புதுப்பிக்கப்பட்டதை உருவாக்கு நீக்கு",
+	"products": {
+		"category": "வகை",
+		"category-description": "வகை",
+		"category-placeholder": "வகை",
+		"color": "நிறம்",
+		"color-description": "நிறம்",
+		"color-placeholder": "நிறம்",
+		"create-new-products": "புதிய தயாரிப்புகளை உருவாக்குங்கள்",
+		"delete-confirm-title": "தயாரிப்புகளை நீக்குதல் : {{Name}}",
+		"delete-failed": "தயாரிப்புகளை நீக்க முடியாது {{Name}}",
+		"deleted-successfully": "தயாரிப்புகள்: {{Name}} வெற்றிகரமாக நீக்கப்பட்டது.",
+		"department": "துறை",
+		"department-description": "துறை",
+		"department-placeholder": "துறை",
+		"description": "விளக்கம்",
+		"description-description": "விளக்கம்",
+		"description-placeholder": "விளக்கம்",
+		"material": "பொருள்",
+		"material-description": "பொருள்",
+		"material-placeholder": "பொருள்",
+		"page-title": "தயாரிப்புகள்",
+		"price": "விலை",
+		"price-description": "விலை",
+		"price-placeholder": "விலை",
+		"productName": "தயாரிப்பு பெயர்",
+		"productName-description": "தயாரிப்பு பெயர்",
+		"productName-filter": "தயாரிப்பு பெயரால் தேடுங்கள்",
+		"productName-placeholder": "தயாரிப்பு பெயர்",
+		"search-by-productName": "",
+		"select-placeholder": "தயாரிப்புகளைத் தேர்ந்தெடுக்கவும்",
+		"size": "அளவு",
+		"size-description": "அளவு",
+		"size-placeholder": "அளவு"
+	},
+	"save": "சேமிக்கவும்",
+	"search": "தேடு",
+	"subLinks": "துணை இணைப்புகள்",
+	"submit": "சமர்ப்பிக்கவும்",
+	"success": "வெற்றி",
+	"update": "புதுப்பிக்கவும்",
+	"update-failed": "புதுப்பிப்பு தோல்வியடைந்தது",
+	"update-success": "வெற்றிகரமாக புதுப்பிக்கப்பட்டது",
+	"view": "காண்க"
+}
